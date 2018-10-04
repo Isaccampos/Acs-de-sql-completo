@@ -113,3 +113,22 @@ where COD_PRODUTO like '_0%';
 
 
 PARTE IVAN MORE
+--29)
+select * from TB_PRODUTO where COD_PRODUTO like '__A'
+
+--30)
+select * from TB_PEDIDO where DATA_EMISSAO < '2016-01-01'
+
+--31)
+select * from TB_PEDIDO where DATA_EMISSAO between '2016-01-01' and '2016-06-30'
+
+--32)
+select * from TB_PEDIDO where (DATA_EMISSAO between '2016-01-01' and '2016-01-31') or  (DATA_EMISSAO between'2016-06-01' and  '2016-06-30')
+
+--33)
+select * from TB_PEDIDO where (CODVEN = 1) and (DATA_EMISSAO between '2016-01-01' and '2016-01-31')
+
+--34)
+select DISTINCT CODCLI from TB_PEDIDO where  DATA_EMISSAO between '2016-01-01' and '2016-01-31' order by CODCLI
+
+
