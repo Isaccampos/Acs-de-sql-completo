@@ -48,6 +48,35 @@ PARTE GETSAM
 
 
 PARTE SHIPPS
+--22
+select * from TB_CLIENTE 
+where nome like '%brindes';
+
+--23
+select * from TB_CLIENTE 
+where nome like '%brindes%';
+
+--24
+select * from TB_PRODUTO
+where descricao like 'caneta%';
+
+--25
+select * from TB_PRODUTO
+where descricao like '%SPECIAL%';
+
+--26
+select * from TB_PRODUTO
+where descricao like '%GOLD';
+
+--27
+select * from TB_CLIENTE
+where nome like '_A%';
+
+--28
+select * from TB_PRODUTO
+where COD_PRODUTO like '_0%';
+
+
 
 
 
